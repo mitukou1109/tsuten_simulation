@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.5">
+  <world name="field">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://field</uri>
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>
