@@ -9,6 +9,8 @@
   <license>MIT</license>
 
   <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>tsuten_behavior</exec_depend>
+  <exec_depend>tsuten_navigation</exec_depend>
 
   <buildtool_depend>catkin</buildtool_depend>
 
