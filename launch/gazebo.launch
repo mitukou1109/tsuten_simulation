@@ -3,7 +3,7 @@
   <arg name="initial_pose" value="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" />
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find tsuten_simulation)/worlds/tables.world" />
+    <arg name="world_name" value="$(find tsuten_simulation)/worlds/tables_and_fence.world" />
   </include>
 
   <node name="robot_urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen"
