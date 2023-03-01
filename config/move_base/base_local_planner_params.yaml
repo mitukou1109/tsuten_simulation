@@ -57,7 +57,7 @@ TebLocalPlannerROS:
   optimization_verbose: false
   obstacle_cost_exponent: 4
 
-  enable_homotopy_class_planning: false # true
+  enable_homotopy_class_planning: true
   enable_multithreading: true
   max_number_classes: 4
   
