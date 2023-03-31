@@ -2,10 +2,13 @@
 <launch>
   <arg name="config_dir" value="$(find tsuten_simulation)/config" />
   <arg name="robot_type" value="tsuten_simple" />
-  <arg name="wheel_radius" value="30.6e-3" />
-  <arg name="wheel_vels_topic" value="wheel_joint_velocity_controller/command" />
 
   <include file="$(find tsuten_simulation)/launch/gazebo.launch" />
 
   <include file="$(find tsuten_behavior)/launch/main.launch" pass_all_args="true" />
+
+  <node name="four_omni_drive_controller" pkg="tsuten_simulation" type="four_omni_drive_controller">
+    <param name="wheel_radius" value="30.6e-3" />
+    <remap from="wheel_vels" to="wheel_joint_velocity_controller/command" />
+  </node>
 </launch>

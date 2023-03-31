@@ -9,11 +9,14 @@
 
   <license>MIT</license>
 
+  <depend>geometry_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>navigation</exec_depend>
   <exec_depend>teb_local_planner</exec_depend>
-  <exec_depend>tsuten_behavior</exec_depend>
-  <exec_depend>tsuten_navigation</exec_depend>
+  <exec_depend>tsuten</exec_depend>
 
   <buildtool_depend>
     catkin</buildtool_depend>
