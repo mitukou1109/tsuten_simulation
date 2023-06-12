@@ -1,5 +1,5 @@
 # tsuten_simulation
 
-通天シミュレーション用パッケージ
+通天シミュレーション用ROSパッケージ
 
-制御用メタパッケージ：https://github.com/mitukou1109/tsuten
+制御用ROSメタパッケージ：https://github.com/mitukou1109/tsuten
