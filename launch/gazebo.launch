@@ -5,7 +5,7 @@
   <rosparam command="load" file="$(find tsuten_simulation)/config/ros_controllers.yaml" />
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find tsuten_simulation)/worlds/tables_and_fence.world" />
+    <arg name="world_name" value="$(find tsuten_simulation)/worlds/tables.world" />
   </include>
 
   <node name="robot_urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen"

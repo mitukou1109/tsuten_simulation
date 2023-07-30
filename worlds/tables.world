@@ -20,12 +20,12 @@
     <include>
       <uri>model://movable_table_1500</uri>
       <static>true</static>
-      <pose>5.5 1.9 0 0 0 0</pose>
+      <pose>5.5 1.4 0 0 0 0</pose>
     </include>
     <include>
       <uri>model://movable_table_1800</uri>
       <static>true</static>
-      <pose>6.5 1.9 0 0 0 0</pose>
+      <pose>6.5 2.4 0 0 0 0</pose>
     </include>
   </world>
 </sdf>
