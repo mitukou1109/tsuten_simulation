@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <arg name="config_dir" value="$(find tsuten_simulation)/config" />
-  <arg name="robot_type" value="tsuten_simple" />
+
 
   <include file="$(find tsuten_simulation)/launch/gazebo.launch" />
 
