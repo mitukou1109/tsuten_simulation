@@ -1,15 +1,15 @@
 TebLocalPlannerROS:
-  acc_lim_x: 2.0
-  acc_lim_y: 2.0
-  acc_lim_theta: 3.0        
-  max_vel_x: 2.0
-  max_vel_x_backwards: 2.0
-  max_vel_y: 2.0
-  max_vel_theta: 4.0
+  acc_lim_x: 1.0
+  acc_lim_y: 1.0
+  acc_lim_theta: 1.5        
+  max_vel_x: 1.0
+  max_vel_x_backwards: 1.0
+  max_vel_y: 1.0
+  max_vel_theta: 2.0
   min_turning_radius: 0.0
   footprint_model:
     type: "polygon"
-    vertices: [[375.0e-3, 380.0e-3], [-375.0e-3, 380.0e-3], [-375.0e-3, -380.0e-3], [375.0e-3, -380.0e-3]]
+    vertices: [[425.0e-3, 425.0e-3], [-425.0e-3, 425.0e-3], [-425.0e-3, -425.0e-3], [425.0e-3, -425.0e-3]]
       
   xy_goal_tolerance: 0.2
   yaw_goal_tolerance: 0.1
@@ -57,10 +57,10 @@ TebLocalPlannerROS:
   weight_acc_lim_y: 1
   weight_acc_lim_theta: 1
   weight_kinematics_nh: 1
-  weight_kinematics_forward_drive: 1
+  weight_kinematics_forward_drive: 0.1
   weight_kinematics_turning_radius: 0
   weight_optimaltime: 1
-  weight_obstacle: 100
+  weight_obstacle: 50
   weight_viapoint: 1
   weight_inflation: 0.2
   weight_adapt_factor: 2
@@ -95,21 +95,3 @@ TebLocalPlannerROS:
   oscillation_omega_eps: 0.1
   oscillation_recovery_min_duration: 10
   oscillation_filter_duration: 10
-
-TrajectoryPlannerROS:
-  acc_lim_x: 1.0
-  acc_lim_y: 1.0
-  acc_lim_theta: 1.5
-  max_vel_x: 2.0
-  min_vel_x: 0.1
-  y_vels: [-1.0, -0.5, 0.5, 1.0]
-  max_vel_theta: 3.0
-  min_vel_theta: -3.0
-  min_in_place_vel_theta: 0.1
-  holonomic_robot: true
-
-  yaw_goal_tolerance: 0.05
-  xy_goal_tolerance: 0.10
-
-  meter_scoring: true
-  path_distance_bias: 1.0
