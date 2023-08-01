@@ -5,3 +5,6 @@ planner_frequency        : 0.0
 controller_frequency     : 5.0
 
 recovery_behavior_enabled: false
+
+GlobalPlanner:
+  orientation_mode: 2 # interpolate
