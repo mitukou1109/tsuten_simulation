@@ -2,16 +2,10 @@
 <launch>
   <arg name="initial_pose" value="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" />
 
-  <rosparam command="load" file="$(find tsuten_simulation)/config/ros_controllers.yaml" />
-
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find tsuten_simulation)/worlds/tables.world" />
   </include>
 
   <node name="robot_urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen"
     args="-param robot_description -urdf -model tsuten $(arg initial_pose)" />
-
-  <node name="controller_spawner" pkg="controller_manager"
-    type="spawner" respawn="false" output="screen"
-    args="wheel_joint_velocity_controller" />
 </launch>

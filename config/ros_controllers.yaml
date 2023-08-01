@@ -1,7 +1,0 @@
-wheel_joint_velocity_controller:
-  type: velocity_controllers/JointGroupVelocityController
-  joints:
-    - rf_wheel_joint
-    - lf_wheel_joint
-    - lb_wheel_joint
-    - rb_wheel_joint

@@ -4,24 +4,18 @@
   <version>1.0.0</version>
   <description>Package for Tsuten simulation.</description>
 
-  <maintainer email="mitukou1109@gmail.com">Mitsuhiro
-    Sakamoto</maintainer>
+  <maintainer email="mitukou1109@gmail.com">
+    Mitsuhiro Sakamoto
+  </maintainer>
 
   <license>MIT</license>
 
-  <depend>geometry_msgs</depend>
-  <depend>roscpp</depend>
-  <depend>std_msgs</depend>
-
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>navigation</exec_depend>
-  <exec_depend>ros_control</exec_depend>
-  <exec_depend>ros_controllers</exec_depend>
   <exec_depend>teb_local_planner</exec_depend>
   <exec_depend>tsuten</exec_depend>
 
-  <buildtool_depend>
-    catkin</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
   <export>
     <gazebo_ros gazebo_model_path="${prefix}/models" />
