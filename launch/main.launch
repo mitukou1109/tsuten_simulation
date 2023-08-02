@@ -3,6 +3,7 @@
   <arg name="config_dir" value="$(find tsuten_simulation)/config" />
 
   <param name="use_sim_time" value="true" />
+  <param name="localization_helper/publish_odom_tf" value="false" />
 
   <include file="$(find tsuten_simulation)/launch/gazebo.launch" />
 
