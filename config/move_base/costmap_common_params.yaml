@@ -7,9 +7,12 @@ obstacle_layer:
     clearing: true
     marking: true
     obstacle_range: 7.5
-    raytrace_range: 3.0
+    raytrace_range: 10.0
     inf_is_valid: true
+  footprint_clearing_enabled: false
 
 robot_base_frame: base_link
 
 footprint: [[425.0e-3, 425.0e-3], [-425.0e-3, 425.0e-3], [-425.0e-3, -425.0e-3], [425.0e-3, -425.0e-3]]
+
+footprint_padding: 0.1
