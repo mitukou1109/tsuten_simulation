@@ -13,8 +13,7 @@ TebLocalPlannerROS:
   max_ratio_detours_duration_best_duration: 3.0
 
   min_obstacle_dist: 0.1
-  inflation_dist: 0.2
-  dynamic_obstacle_inflation_dist: 0.6
+  inflation_dist: 0.3
   include_costmap_obstacles: true
 
   optimization_activate: true
