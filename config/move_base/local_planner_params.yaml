@@ -1,20 +1,13 @@
 TebLocalPlannerROS:
   xy_goal_tolerance: 0.2
   yaw_goal_tolerance: 0.1
-  free_goal_vel: false
 
-  enable_multithreading: true
-  max_number_classes: 4
-  switching_blocking_period: 0.0
   roadmap_graph_no_samples: 15
   roadmap_graph_area_width: 5
   roadmap_graph_area_length_scale: 1.0
   h_signature_prescaler: 0.5
   h_signature_threshold: 0.1
   obstacle_heading_threshold: 0.45
-  enable_homotopy_class_planning: true
-  viapoints_all_candidates: true
-  visualize_hc_graph: false
   visualize_with_time_as_z_axis_scale: false
   delete_detours_backwards: true
   max_ratio_detours_duration_best_duration: 3.0
@@ -23,14 +16,9 @@ TebLocalPlannerROS:
   inflation_dist: 0.2
   dynamic_obstacle_inflation_dist: 0.6
   include_costmap_obstacles: true
-  costmap_obstacles_behind_robot_dist: 1.0
-  obstacle_poses_affected: 15
 
-  no_inner_iterations: 5
-  no_outer_iterations: 4
   optimization_activate: true
   optimization_verbose: false
-  penalty_epsilon: 0.1
   weight_max_vel_x: 2
   weight_max_vel_y: 2
   weight_max_vel_theta: 1
@@ -43,15 +31,8 @@ TebLocalPlannerROS:
   weight_optimaltime: 1
   weight_shortest_path: 0
   weight_obstacle: 50
-  weight_inflation: 0.2
-  weight_dynamic_obstacle: 30
-  weight_dynamic_obstacle_inflation: 0.2
   weight_viapoint: 30 # important
-  weight_adapt_factor: 2
-  obstacle_cost_exponent: 4
 
-  shrink_horizon_backup: true
-  shrink_horizon_min_duration: 10
   oscillation_recovery: false
 
   max_vel_x: 1.0
@@ -65,14 +46,9 @@ TebLocalPlannerROS:
   complete_global_plan: true
       
   teb_autosize: true
-  dt_ref: 0.3
-  dt_hysteresis: 0.1
   global_plan_overwrite_orientation: false # important
   allow_init_with_backwards_motion: false
-  max_global_plan_lookahead_dist: 3.0
   feasibility_check_no_poses: 5
-  exact_arc_length: false
-  max_samples: 500
 
   global_plan_viapoint_sep: 0.2 # important
 
@@ -81,15 +57,3 @@ TebLocalPlannerROS:
     vertices: [[425.0e-3, 425.0e-3], [-425.0e-3, 425.0e-3], [-425.0e-3, -425.0e-3], [425.0e-3, -425.0e-3]]
 
   costmap_converter_plugin: "costmap_converter::CostmapToLinesDBSRANSAC"
-  costmap_converter_spin_thread: true
-  costmap_converter_rate: 5
-  costmap_converter/CostmapToLinesDBSRANSAC:
-    cluster_max_distance: 0.4
-    cluster_min_pts: 2
-    ransac_inlier_distance: 0.15
-    ransac_min_inliers: 10
-    ransac_no_iterations: 2000
-    ransac_remainig_outliers: 3
-    ransac_convert_outlier_pts: True
-    ransac_filter_remaining_outlier_pts: False
-    convex_hull_min_pt_separation: 0.1
