@@ -1,4 +1,6 @@
-goal_distance_from_table: 0.6
+dual_table_upper_r_shooter_delay: 0.5
+
+table_approach_vel: 0.1
 
 shooter_valve_on_duration:
   dual_table_lower_shooter      : 0.5
@@ -7,3 +9,7 @@ shooter_valve_on_duration:
   movable_table_1200_shooter    : 0.5
   movable_table_1500_shooter    : 0.5
   movable_table_1800_shooter    : 0.5
+
+aligning_p_gain_x  : 1.0
+aligning_p_gain_y  : 1.0
+aligning_p_gain_yaw: 3.0
