@@ -1,5 +1,6 @@
 base_global_planner      : global_planner/GlobalPlanner
-base_local_planner       : teb_local_planner/TebLocalPlannerROS
+# base_local_planner       : teb_local_planner/TebLocalPlannerROS
+base_local_planner       : regulated_pure_pursuit_controller/RegulatedPurePursuitController
 
 planner_frequency        : 0.0
 controller_frequency     : 5.0
