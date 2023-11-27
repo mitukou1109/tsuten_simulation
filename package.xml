@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <package format="2">
   <name>tsuten_simulation</name>
   <version>1.0.0</version>
@@ -10,14 +9,10 @@
 
   <license>MIT</license>
 
-  <exec_depend>gazebo_ros</exec_depend>
-  <exec_depend>navigation</exec_depend>
-  <exec_depend>teb_local_planner</exec_depend>
-  <exec_depend>tsuten</exec_depend>
-
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <export>
+    <build_type>ament_cmake</build_type>
     <gazebo_ros gazebo_model_path="${prefix}/models" />
   </export>
 </package>
